@@ -1,0 +1,159 @@
+練習問題1
+1,2,4,5,10 #10は整数
+
+練習問題2
+puts "DIVE INTO CODE"
+puts "私は受験生です"
+puts "30際です"
+
+練習問題3
++
+-
+*
+/
+%
+
+練習問題4
+<
+>
+==
+>
+<
+
+練習問題5
+false
+true
+true
+true　#比較できない
+false　→true
+true   →false
+false  →true
+true   →false
+false
+false  #比較できない
+false
+
+練習問題６
+name = "yamada"
+age = 18
+puts name
+puts age
+
+練習問題7 
+puts "私の名前は#{name}です。年齢は#{age}歳です。"
+
+練習問題8
+season = ["春","夏","秋"]
+
+練習問題8-2
+season << "冬"
+
+練習問題8-3
+puts season[2]
+
+練習問題9-1
+house = {price:"2000万",location:"東京都",size:"100坪"}
+
+練習問題9-2
+puts house[:location]
+
+練習問題10
+puts house[1][:location]
+puts house[0][:size]
+puts house[2][:price]
+puts house[2][:size]
+
+練習問題11
+num = gets.to_i
+if num >= 50
+   puts "50以上だよ"
+else
+   puts "50未満だよ"
+end
+
+練習問題11-2
+num = gets.to_i
+if num == 30
+   puts "30ちょうどだよ"
+elsif num >= 50
+   puts "50以上だよ"
+else
+   puts "50未満だよ"
+end
+
+練習問題12
+num = gets.to_i
+if num % 2 == 0
+   puts "numは偶数"
+else
+   puts "numは奇数"
+end
+
+練習問題13
+num = 1
+while num < 11
+   puts "こんばんは"
+   num += 1
+end
+
+練習問題14
+for numbers in 0..10 do
+    puts "こんにちは"
+end
+
+練習問題15
+10.times do
+   puts "おはよう"
+end
+
+練習問題16
+numbers = [1,2,3,4,5,6,7,8,9,10]
+[1,2,3,4,5,6,7,8,9,10].each do |numbers|
+   puts numbers
+end
+
+練習問題17-1
+def addition
+   #処理
+end
+練習問題17-2
+addition
+練習問題17-3
+def addition(x,y,z)
+  #処理
+end
+addition(2,3,7)
+練習問題17-4
+def addition(x,y,z)
+   puts x + y
+end
+addition(2,3,7)
+練習問題17-5
+def addition(x,y,z)
+   return(x+y+z)/3
+end
+puts addition(2,3,7)
+
+練習問題18
+def division(x,y)
+   return x/y
+end
+puts division(10,5)
+
+練習問題19
+エラー
+
+練習問題20
+
+def doing(date, place, food)
+puts "#{date}は#{place}で#{food}を食べる"
+end
+
+puts "予定を入力" 
+date = gets.chomp
+puts "場所を入力"
+place = gets.chomp
+puts "食べるものを入力"
+food = gets.chomp
+
+doing(date,place,food)
