@@ -2,17 +2,17 @@
 class Player
   def hand
     # コンソールを入力待ち状態にし、プレイヤーがコンソールから打ち込んだ値を出力する処理のメソッドの処理をこの中に作成する
-    # グーチョキパー(0,1,2)に当てはまる入力だった場合にのみbreakで処理を抜け、my_handを返す
+    # グーチョキパー(1,2,3)に当てはまる入力だった場合にのみbreakで処理を抜ける
     # my_handに入力されたものをinclude?でjan_numbersの中を探し、当てはまればtrueを返し、breakで処理を抜ける
-    jan_numbers = (0..2)
+    jan_numbers = (1..3)
     while true
       puts("数字を入力してください")
-      puts ("[0]:グー\n[1]:チョキ\n[2]:パー")
+      puts ("[1]:グー\n[2]:チョキ\n[3]:パー")
       my_hand = gets.to_i
       break if jan_numbers.include?(my_hand)
         puts("数値が正しくありません")
       end
-       my_hand
+       my_hand -= 1
   end
 end
 =end
@@ -20,12 +20,12 @@ end
 class Player
   def hand
     # コンソールを入力待ち状態にし、プレイヤーがコンソールから打ち込んだ値を出力する処理のメソッドの処理をこの中に作成する
-    # my_handに入力されたものが0,1,2のいずれかの場合は、my_handを返す
+    # my_handに入力されたものが1,2,3のいずれかの場合は、インスタンス変数のplayer_handにmy_handを代入する
       puts("数字を入力してください")
-      puts ("[0]:グー\n[1]:チョキ\n[2]:パー")
+      puts ("[1]:グー\n[2]:チョキ\n[3]:パー")
       my_hand = gets.to_i
-      if my_hand ==0 || my_hand == 1 || my_hand == 2
-        my_hand
+      if my_hand == 1 || my_hand == 2 || my_hand == 3
+        my_hand -= 1
       else
         puts("数値が正しくありません")
         hand
